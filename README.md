@@ -6,7 +6,6 @@ Static personal homepage for `https://zzy4566.github.io/`.
 
 - `index.html` contains the homepage content.
 - `assets/styles.css` contains all styling.
-- `assets/zuyan-zhao-cv.pdf` is the downloadable CV copied from the provided resume.
 
 ## Publish
 
