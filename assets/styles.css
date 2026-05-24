@@ -211,6 +211,7 @@ a:hover {
   width: 100%;
   aspect-ratio: 1;
   object-fit: cover;
+  object-position: center 58%;
   border-radius: 8px;
   background: #dfe8e4;
 }
@@ -332,8 +333,7 @@ time {
 
 .publication-card {
   display: grid;
-  grid-template-columns: minmax(250px, 0.82fr) minmax(0, 1.18fr);
-  gap: 28px;
+  gap: 24px;
   padding: 24px;
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -341,83 +341,18 @@ time {
   box-shadow: var(--shadow);
 }
 
-.paper-visual {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 18px;
-  min-height: 320px;
-  padding: 18px;
+.paper-teaser {
+  margin: 0;
   border-radius: 8px;
   overflow: hidden;
-  background: #102f33;
-  color: #f5fbfa;
+  background: #050505;
 }
 
-.paper-visual::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  opacity: 0.18;
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.18) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.18) 1px, transparent 1px);
-  background-size: 24px 24px;
-}
-
-.visual-grid,
-.foundation,
-.adapter-row {
-  position: relative;
-}
-
-.visual-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-
-.source,
-.adapter-row span,
-.foundation {
-  border: 1px solid rgba(255, 255, 255, 0.22);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.09);
-}
-
-.source {
-  display: grid;
-  place-items: center;
-  min-height: 58px;
-  color: #c6ece9;
-  font-weight: 800;
-}
-
-.foundation {
-  display: grid;
-  place-items: center;
-  min-height: 82px;
-  background: rgba(244, 191, 79, 0.16);
-  color: #ffe7a8;
-  font-weight: 850;
-}
-
-.adapter-row {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-
-.adapter-row span {
-  display: grid;
-  place-items: center;
-  min-height: 54px;
-  padding: 8px;
-  color: #d4e8e4;
-  font-size: 0.78rem;
-  font-weight: 760;
-  text-align: center;
+.paper-teaser img {
+  width: 100%;
+  aspect-ratio: 3686 / 1039;
+  object-fit: contain;
+  background: #050505;
 }
 
 .venue,
@@ -533,7 +468,6 @@ time {
 @media (max-width: 960px) {
   .hero,
   .research-strip .section-inner,
-  .publication-card,
   .split {
     grid-template-columns: 1fr;
   }
@@ -583,10 +517,6 @@ time {
 
   .quick-facts,
   .project-grid,
-  .adapter-row {
-    grid-template-columns: 1fr;
-  }
-
   .news-list article,
   .award-list article {
     grid-template-columns: 1fr;
@@ -604,8 +534,8 @@ time {
     padding: 18px;
   }
 
-  .paper-visual {
-    min-height: 280px;
+  .paper-teaser {
+    margin-inline: -6px;
   }
 
   .site-footer {

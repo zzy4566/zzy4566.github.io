@@ -29,6 +29,7 @@ git push -u origin main
 
 ## Assets To Replace Later
 
-- Replace `assets/profile-placeholder.svg` with `assets/profile.jpg` in `index.html` if you want to use a personal portrait.
-- Add a real `UniPercept` teaser image when available and replace the visual block in the publication card.
+- `assets/picture.jpg` is used as the personal portrait.
+- `assets/unipercept_teaser.png` is used as the UniPercept publication teaser.
+- `assets/unipercept_framework.png` is kept for a future method/details section.
 - Add project images for the world-model and diffusion-convergence projects if you want richer project cards.

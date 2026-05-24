@@ -2,8 +2,9 @@
 
 Suggested filenames for future homepage media:
 
-- `profile.jpg` for a personal portrait. Update the image path in `index.html` after adding it.
-- `unipercept-teaser.jpg` for the CVPR 2026 paper teaser.
+- `picture.jpg` is used as the personal portrait.
+- `unipercept_teaser.png` is used as the CVPR 2026 paper teaser on the homepage.
+- `unipercept_framework.png` is kept as an optional method figure for future paper/project detail pages.
 - `world-model-teaser.jpg` for the physically consistent world model project.
 - `diffusion-convergence-teaser.jpg` for the diffusion convergence project.
 
