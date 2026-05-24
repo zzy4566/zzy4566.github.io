@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Zuyan Zhao, Ph.D. student at ICT, Chinese Academy of Sciences, working on world models, image generation, and generalizable visual perception.">
+    <meta name="theme-color" content="#0f2f33">
+    <meta property="og:title" content="Zuyan Zhao | Visual Perception & Generative World Models">
+    <meta property="og:description" content="Ph.D. student at ICT, CAS. Researching world models, image generation, and unified visual perception.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://zzy4566.github.io/">
+    <title>Zuyan Zhao | Visual Perception & Generative World Models</title>
+    <link rel="stylesheet" href="assets/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Zuyan Zhao home">Zuyan Zhao</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#awards">Awards</a>
+      </nav>
+    </header>
+
+    <main id="content">
+      <section class="hero" id="top" aria-labelledby="intro-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Ph.D. Student · VIPL Lab · ICT, Chinese Academy of Sciences</p>
+          <h1 id="intro-title">Zuyan Zhao <span>赵祖妍</span></h1>
+          <p class="lead">
+            I work on world models, image generation, and generalizable visual perception, with a current focus on diffusion-based foundation-adapter systems and physically consistent generative models.
+          </p>
+
+          <div class="hero-actions" aria-label="Profile links">
+            <a class="button primary" href="mailto:zhaozuyan24s@ict.ac.cn">Email</a>
+            <a class="button secondary" href="assets/zuyan-zhao-cv.pdf">CV</a>
+            <a class="button secondary" href="https://VIPL-GENUN.github.io/Project-UniPercept">UniPercept</a>
+            <a class="button ghost" href="https://github.com/zzy4566">GitHub</a>
+          </div>
+
+          <dl class="quick-facts" aria-label="Quick facts">
+            <div>
+              <dt>Research</dt>
+              <dd>World models, diffusion models, visual perception</dd>
+            </div>
+            <div>
+              <dt>Advisor</dt>
+              <dd>Xilin Chen</dd>
+            </div>
+            <div>
+              <dt>Location</dt>
+              <dd>Beijing, China</dd>
+            </div>
+          </dl>
+        </div>
+
+        <aside class="profile-panel" aria-label="Profile summary">
+          <img
+            class="profile-photo"
+            src="assets/profile-placeholder.svg"
+            alt="Zuyan Zhao profile placeholder"
+          >
+          <div class="profile-meta">
+            <p class="panel-label">Current</p>
+            <p>2024 Ph.D. student in Computer Science and Technology at the Institute of Computing Technology, Chinese Academy of Sciences.</p>
+          </div>
+          <div class="status-line">
+            <span></span>
+            <p>Open to research conversations on perception, generation, and physically grounded video modeling.</p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="research-strip" id="research" aria-labelledby="research-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Research</p>
+            <h2 id="research-title">Building models that see, generate, and reason about motion.</h2>
+          </div>
+          <div class="research-topics">
+            <article>
+              <h3>Unified Visual Perception</h3>
+              <p>Foundation-adapter frameworks for scalable visual perception across tasks and domains.</p>
+            </article>
+            <article>
+              <h3>World Models</h3>
+              <p>Video generation systems that better respect motion, collision, friction, falling, and other physical dynamics.</p>
+            </article>
+            <article>
+              <h3>Diffusion Training</h3>
+              <p>Training strategies that improve early semantic structure formation and accelerate convergence.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="news-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">News</p>
+          <h2 id="news-title">Recent Updates</h2>
+        </div>
+        <div class="news-list">
+          <article>
+            <time datetime="2026">2026</time>
+            <p><strong>UniPercept</strong> is listed as a CVPR 2026 first-author paper.</p>
+          </article>
+          <article>
+            <time datetime="2025">2025</time>
+            <p>Received the UCAS Merit Student honor and First-class Academic Scholarship.</p>
+          </article>
+          <article>
+            <time datetime="2024-09">Sep 2024</time>
+            <p>Started Ph.D. study at ICT, CAS, advised by Prof. Xilin Chen.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="publications" aria-labelledby="publication-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Publications</p>
+          <h2 id="publication-title">Selected Work</h2>
+        </div>
+
+        <article class="publication-card">
+          <div class="paper-visual" aria-hidden="true">
+            <div class="visual-grid">
+              <span class="source">Images</span>
+              <span class="source">Videos</span>
+              <span class="source">Depth</span>
+              <span class="source">Masks</span>
+            </div>
+            <div class="foundation">Diffusion Foundation</div>
+            <div class="adapter-row">
+              <span>Task Adapter</span>
+              <span>Domain Adapter</span>
+              <span>Prompt Adapter</span>
+            </div>
+          </div>
+          <div class="publication-copy">
+            <p class="venue">CVPR 2026 · First Author</p>
+            <h3>UniPercept: A Unified Diffusion Model for Generalizable Visual Perception</h3>
+            <p>
+              UniPercept proposes a foundation-adapter framework for universal and extensible visual perception. A shared diffusion-based foundation model learns general perceptual representations, while lightweight task-specific adapters capture the distinct characteristics of each perception task.
+            </p>
+            <p>
+              The system currently supports 14 visual perception tasks and can be efficiently adapted to new tasks with lower compute and data cost.
+            </p>
+            <div class="pub-links">
+              <a href="https://VIPL-GENUN.github.io/Project-UniPercept">Project Page</a>
+              <a href="assets/zuyan-zhao-cv.pdf">CV</a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projects-title">Research Projects</h2>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-kicker">Ongoing</p>
+            <h3>Physically Consistent World Models</h3>
+            <p>
+              Studying generative world models that learn spatiotemporal evolution from videos and better follow Newtonian physical laws such as motion, collision, friction, and free fall.
+            </p>
+            <ul>
+              <li>Designed action-specific invariant metrics for velocity, acceleration, momentum, energy, and trajectory plausibility.</li>
+              <li>Integrated SAM2-based object tracking to compare visual trajectories with physical state trajectories.</li>
+            </ul>
+          </article>
+
+          <article class="project-card">
+            <p class="project-kicker">Tencent Star Project · Ongoing</p>
+            <h3>Accelerating Diffusion Model Convergence</h3>
+            <p>
+              Investigating high-noise-stage x0 prediction behavior in DDPM, DDIM, and SiT-style training and sampling pipelines.
+            </p>
+            <ul>
+              <li>Introduced clustered representative images and Gaussian-blurred targets at high-noise timesteps.</li>
+              <li>Evaluated convergence and generation quality on CelebA and ImageNet-256 using FID, sFID, IS, and diversity metrics.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split" id="education" aria-labelledby="education-title">
+        <div>
+          <div class="section-heading compact">
+            <p class="eyebrow">Education</p>
+            <h2 id="education-title">Academic Background</h2>
+          </div>
+          <div class="timeline">
+            <article>
+              <time>2024.09 - Present</time>
+              <h3>Institute of Computing Technology, Chinese Academy of Sciences</h3>
+              <p>Ph.D. in Computer Science and Technology, VIPL Lab. GPA: 3.87 / 4.00.</p>
+            </article>
+            <article>
+              <time>2020.09 - 2024.07</time>
+              <h3>Southeast University</h3>
+              <p>B.Eng. in Computer Science and Technology. GPA: 3.76 / 4.00, ranked 6 / 113.</p>
+            </article>
+          </div>
+        </div>
+
+        <aside class="contact-panel" aria-label="Contact">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s Connect</h2>
+          <p>I am based in Beijing and can be reached by email for research discussions and collaboration.</p>
+          <a href="mailto:zhaozuyan24s@ict.ac.cn">zhaozuyan24s@ict.ac.cn</a>
+        </aside>
+      </section>
+
+      <section class="section" id="awards" aria-labelledby="awards-title">
+        <div class="section-heading compact">
+          <p class="eyebrow">Honors</p>
+          <h2 id="awards-title">Awards</h2>
+        </div>
+        <div class="award-list">
+          <article>
+            <time>2025</time>
+            <p>UCAS Merit Student; First-class Academic Scholarship.</p>
+          </article>
+          <article>
+            <time>2023</time>
+            <p>ICPC China Collegiate Programming Contest Women’s Contest, Gold Medal.</p>
+          </article>
+          <article>
+            <time>2023</time>
+            <p>Challenge Cup “Jiebang Guashuai”, Bronze Award.</p>
+          </article>
+          <article>
+            <time>2023</time>
+            <p>Jiangsu Collegiate Programming Contest, Silver Medal.</p>
+          </article>
+          <article>
+            <time>2021</time>
+            <p>National College Student Mathematics Competition, Second Prize; Jiangsu Advanced Mathematics Competition, Second Prize.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 Zuyan Zhao. Built for GitHub Pages.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+  </body>
+</html>
