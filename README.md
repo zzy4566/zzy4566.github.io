@@ -6,6 +6,7 @@ Static personal homepage for `https://zzy4566.github.io/`.
 
 - `index.html` contains the homepage content.
 - `assets/styles.css` contains all styling.
+- `assets/i18n.js` powers the Chinese / English language switcher. The default language is Chinese.
 
 ## Publish
 

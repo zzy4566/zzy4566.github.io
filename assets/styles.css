@@ -78,6 +78,12 @@ a:hover {
   text-decoration: none;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .site-nav {
   display: flex;
   align-items: center;
@@ -92,6 +98,40 @@ a:hover {
 
 .site-nav a:hover {
   color: var(--ink);
+}
+
+.language-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.lang-option {
+  min-width: 48px;
+  min-height: 34px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.lang-option[aria-pressed="true"] {
+  background: var(--teal-dark);
+  color: #fff;
+}
+
+.lang-option:focus-visible {
+  outline: 2px solid var(--coral);
+  outline-offset: 2px;
 }
 
 .hero {
@@ -494,6 +534,12 @@ time {
     align-items: flex-start;
     flex-direction: column;
     padding: 14px 20px;
+  }
+
+  .header-actions {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 12px;
   }
 
   .site-nav {

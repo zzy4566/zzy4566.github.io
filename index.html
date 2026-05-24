@@ -1,75 +1,87 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Zuyan Zhao, Ph.D. student at ICT, Chinese Academy of Sciences, working on world models, image generation, and generalizable visual perception.">
+    <meta
+      name="description"
+      data-i18n-content="metaDescription"
+      content="赵祖妍，中国科学院计算技术研究所博士生，研究方向为世界模型、图像生成与通用视觉感知。"
+    >
     <meta name="theme-color" content="#0f2f33">
-    <meta property="og:title" content="Zuyan Zhao | Visual Perception & Generative World Models">
-    <meta property="og:description" content="Ph.D. student at ICT, CAS. Researching world models, image generation, and unified visual perception.">
+    <meta property="og:title" data-i18n-content="ogTitle" content="赵祖妍 | 视觉感知与生成式世界模型">
+    <meta property="og:description" data-i18n-content="ogDescription" content="中国科学院计算技术研究所博士生，研究世界模型、图像生成与统一视觉感知。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://zzy4566.github.io/">
-    <title>Zuyan Zhao | Visual Perception & Generative World Models</title>
+    <title data-i18n="pageTitle">赵祖妍 | 视觉感知与生成式世界模型</title>
     <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/i18n.js" defer></script>
   </head>
   <body>
-    <a class="skip-link" href="#content">Skip to content</a>
+    <a class="skip-link" href="#content" data-i18n="skipLink">跳到正文</a>
 
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Zuyan Zhao home">Zuyan Zhao</a>
-      <nav class="site-nav" aria-label="Primary navigation">
-        <a href="#research">Research</a>
-        <a href="#publications">Publications</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
-        <a href="#awards">Awards</a>
-      </nav>
+      <a class="brand" href="#top" data-i18n-aria-label="brandAria" aria-label="赵祖妍主页">Zuyan Zhao</a>
+      <div class="header-actions">
+        <nav class="site-nav" data-i18n-aria-label="navAria" aria-label="主导航">
+          <a href="#research" data-i18n="navResearch">研究</a>
+          <a href="#publications" data-i18n="navPublications">论文</a>
+          <a href="#projects" data-i18n="navProjects">项目</a>
+          <a href="#education" data-i18n="navEducation">教育</a>
+          <a href="#awards" data-i18n="navAwards">荣誉</a>
+        </nav>
+        <div class="language-toggle" data-language-toggle data-i18n-aria-label="languageToggleAria" aria-label="语言切换">
+          <button class="lang-option" type="button" data-lang="zh" aria-pressed="true">中文</button>
+          <button class="lang-option" type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
     </header>
 
     <main id="content">
       <section class="hero" id="top" aria-labelledby="intro-title">
         <div class="hero-copy">
-          <p class="eyebrow">Ph.D. Student · VIPL Lab · ICT, Chinese Academy of Sciences</p>
+          <p class="eyebrow" data-i18n="heroEyebrow">博士生 · VIPL 实验室 · 中国科学院计算技术研究所</p>
           <h1 id="intro-title">Zuyan Zhao <span>赵祖妍</span></h1>
-          <p class="lead">
-            I work on world models, image generation, and generalizable visual perception, with a current focus on diffusion-based foundation-adapter systems and physically consistent generative models.
+          <p class="lead" data-i18n="heroLead">
+            我关注世界模型、图像生成与通用视觉感知，当前重点研究基于扩散模型的 foundation-adapter 系统，以及具有物理一致性的生成式世界模型。
           </p>
 
-          <div class="hero-actions" aria-label="Profile links">
-            <a class="button primary" href="mailto:zhaozuyan24s@ict.ac.cn">Email</a>
+          <div class="hero-actions" data-i18n-aria-label="profileLinksAria" aria-label="个人链接">
+            <a class="button primary" href="mailto:zhaozuyan24s@ict.ac.cn" data-i18n="emailButton">邮箱</a>
             <a class="button secondary" href="https://VIPL-GENUN.github.io/Project-UniPercept">UniPercept</a>
             <a class="button ghost" href="https://github.com/zzy4566">GitHub</a>
           </div>
 
-          <dl class="quick-facts" aria-label="Quick facts">
+          <dl class="quick-facts" data-i18n-aria-label="quickFactsAria" aria-label="基本信息">
             <div>
-              <dt>Research</dt>
-              <dd>World models, diffusion models, visual perception</dd>
+              <dt data-i18n="factResearchLabel">研究方向</dt>
+              <dd data-i18n="factResearchValue">世界模型、扩散模型、视觉感知</dd>
             </div>
             <div>
-              <dt>Advisor</dt>
-              <dd>Xilin Chen</dd>
+              <dt data-i18n="factAdvisorLabel">导师</dt>
+              <dd data-i18n="factAdvisorValue">陈熙霖</dd>
             </div>
             <div>
-              <dt>Location</dt>
-              <dd>Beijing, China</dd>
+              <dt data-i18n="factLocationLabel">地点</dt>
+              <dd data-i18n="factLocationValue">中国北京</dd>
             </div>
           </dl>
         </div>
 
-        <aside class="profile-panel" aria-label="Profile summary">
+        <aside class="profile-panel" data-i18n-aria-label="profilePanelAria" aria-label="个人简介">
           <img
             class="profile-photo"
             src="assets/picture.jpg"
-            alt="Zuyan Zhao"
+            data-i18n-alt="profilePhotoAlt"
+            alt="赵祖妍"
           >
           <div class="profile-meta">
-            <p class="panel-label">Current</p>
-            <p>2024 Ph.D. student in Computer Science and Technology at the Institute of Computing Technology, Chinese Academy of Sciences.</p>
+            <p class="panel-label" data-i18n="currentLabel">当前</p>
+            <p data-i18n="currentText">2024 级博士生，就读于中国科学院计算技术研究所计算机科学与技术专业，所在实验室为 VIPL。</p>
           </div>
           <div class="status-line">
             <span></span>
-            <p>Open to research conversations on perception, generation, and physically grounded video modeling.</p>
+            <p data-i18n="statusText">欢迎围绕视觉感知、图像生成与物理一致视频建模进行交流。</p>
           </div>
         </aside>
       </section>
@@ -77,21 +89,21 @@
       <section class="research-strip" id="research" aria-labelledby="research-title">
         <div class="section-inner">
           <div class="section-heading">
-            <p class="eyebrow">Research</p>
-            <h2 id="research-title">Building models that see, generate, and reason about motion.</h2>
+            <p class="eyebrow" data-i18n="researchEyebrow">研究</p>
+            <h2 id="research-title" data-i18n="researchTitle">构建能够感知、生成并理解运动规律的模型。</h2>
           </div>
           <div class="research-topics">
             <article>
-              <h3>Unified Visual Perception</h3>
-              <p>Foundation-adapter frameworks for scalable visual perception across tasks and domains.</p>
+              <h3 data-i18n="topicPerceptionTitle">统一视觉感知</h3>
+              <p data-i18n="topicPerceptionText">探索可扩展到多任务、多视觉域的 foundation-adapter 感知框架。</p>
             </article>
             <article>
-              <h3>World Models</h3>
-              <p>Video generation systems that better respect motion, collision, friction, falling, and other physical dynamics.</p>
+              <h3 data-i18n="topicWorldTitle">世界模型</h3>
+              <p data-i18n="topicWorldText">研究更符合运动、碰撞、摩擦、自由落体等物理规律的视频生成模型。</p>
             </article>
             <article>
-              <h3>Diffusion Training</h3>
-              <p>Training strategies that improve early semantic structure formation and accelerate convergence.</p>
+              <h3 data-i18n="topicDiffusionTitle">扩散模型训练</h3>
+              <p data-i18n="topicDiffusionText">设计提升早期语义轮廓形成速度与模型收敛效率的训练策略。</p>
             </article>
           </div>
         </div>
@@ -99,49 +111,50 @@
 
       <section class="section" aria-labelledby="news-title">
         <div class="section-heading compact">
-          <p class="eyebrow">News</p>
-          <h2 id="news-title">Recent Updates</h2>
+          <p class="eyebrow" data-i18n="newsEyebrow">动态</p>
+          <h2 id="news-title" data-i18n="newsTitle">近期更新</h2>
         </div>
         <div class="news-list">
           <article>
             <time datetime="2026">2026</time>
-            <p><strong>UniPercept</strong> is listed as a CVPR 2026 first-author paper.</p>
+            <p data-i18n="newsPaper">UniPercept 为 CVPR 2026 一作论文。</p>
           </article>
           <article>
             <time datetime="2025">2025</time>
-            <p>Received the UCAS Merit Student honor and First-class Academic Scholarship.</p>
+            <p data-i18n="newsScholarship">获得中国科学院大学三好学生与一等学业奖学金。</p>
           </article>
           <article>
-            <time datetime="2024-09">Sep 2024</time>
-            <p>Started Ph.D. study at ICT, CAS, advised by Prof. Xilin Chen.</p>
+            <time datetime="2024-09">2024.09</time>
+            <p data-i18n="newsPhd">进入中国科学院计算技术研究所攻读博士学位，导师为陈熙霖老师。</p>
           </article>
         </div>
       </section>
 
       <section class="section" id="publications" aria-labelledby="publication-title">
         <div class="section-heading compact">
-          <p class="eyebrow">Publications</p>
-          <h2 id="publication-title">Selected Work</h2>
+          <p class="eyebrow" data-i18n="publicationsEyebrow">论文</p>
+          <h2 id="publication-title" data-i18n="publicationsTitle">代表工作</h2>
         </div>
 
         <article class="publication-card">
           <figure class="paper-teaser">
             <img
               src="assets/unipercept_teaser.png"
-              alt="UniPercept teaser showing visual perception outputs across multiple tasks"
+              data-i18n-alt="paperTeaserAlt"
+              alt="UniPercept 多任务视觉感知结果示意图"
             >
           </figure>
           <div class="publication-copy">
-            <p class="venue">CVPR 2026 · First Author</p>
+            <p class="venue" data-i18n="paperVenue">CVPR 2026 · 一作</p>
             <h3>UniPercept: A Unified Diffusion Model for Generalizable Visual Perception</h3>
-            <p>
-              UniPercept proposes a foundation-adapter framework for universal and extensible visual perception. A shared diffusion-based foundation model learns general perceptual representations, while lightweight task-specific adapters capture the distinct characteristics of each perception task.
+            <p data-i18n="paperDescriptionOne">
+              UniPercept 提出了一个用于通用且可扩展视觉感知的 foundation-adapter 框架：共享的扩散基础模型学习跨视觉域的通用感知表征，轻量级任务适配器捕捉每类感知任务的独特特征。
             </p>
-            <p>
-              The system currently supports 14 visual perception tasks and can be efficiently adapted to new tasks with lower compute and data cost.
+            <p data-i18n="paperDescriptionTwo">
+              该系统目前支持 14 类视觉感知任务，并能够以较低计算与数据成本高效适配新任务。
             </p>
             <div class="pub-links">
-              <a href="https://VIPL-GENUN.github.io/Project-UniPercept">Project Page</a>
+              <a href="https://VIPL-GENUN.github.io/Project-UniPercept" data-i18n="projectPageButton">项目主页</a>
             </div>
           </div>
         </article>
@@ -149,32 +162,32 @@
 
       <section class="section" id="projects" aria-labelledby="projects-title">
         <div class="section-heading compact">
-          <p class="eyebrow">Projects</p>
-          <h2 id="projects-title">Research Projects</h2>
+          <p class="eyebrow" data-i18n="projectsEyebrow">项目</p>
+          <h2 id="projects-title" data-i18n="projectsTitle">科研项目</h2>
         </div>
 
         <div class="project-grid">
           <article class="project-card">
-            <p class="project-kicker">Ongoing</p>
-            <h3>Physically Consistent World Models</h3>
-            <p>
-              Studying generative world models that learn spatiotemporal evolution from videos and better follow Newtonian physical laws such as motion, collision, friction, and free fall.
+            <p class="project-kicker" data-i18n="ongoingLabel">进行中</p>
+            <h3 data-i18n="worldProjectTitle">物理一致的世界模型</h3>
+            <p data-i18n="worldProjectText">
+              围绕物理一致的生成式世界模型开展研究，探索利用视频生成学习真实世界中的时空演化规律，提升模型对运动、碰撞、摩擦、自由落体等牛顿物理规律的遵循能力。
             </p>
             <ul>
-              <li>Designed action-specific invariant metrics for velocity, acceleration, momentum, energy, and trajectory plausibility.</li>
-              <li>Integrated SAM2-based object tracking to compare visual trajectories with physical state trajectories.</li>
+              <li data-i18n="worldProjectPointOne">设计动作特定的不变量指标，评估速度、加速度、动量、能量和轨迹合理性。</li>
+              <li data-i18n="worldProjectPointTwo">接入 SAM2 提取视频物体轨迹，对比视觉追踪轨迹与物理状态轨迹误差。</li>
             </ul>
           </article>
 
           <article class="project-card">
-            <p class="project-kicker">Tencent Star Project · Ongoing</p>
-            <h3>Accelerating Diffusion Model Convergence</h3>
-            <p>
-              Investigating high-noise-stage x0 prediction behavior in DDPM, DDIM, and SiT-style training and sampling pipelines.
+            <p class="project-kicker" data-i18n="tencentLabel">腾讯超新星项目 · 进行中</p>
+            <h3 data-i18n="diffusionProjectTitle">扩散模型收敛加速研究</h3>
+            <p data-i18n="diffusionProjectText">
+              研究 DDPM、DDIM 与 SiT 等模型在高噪声阶段的 x0 预测行为，分析训练与采样机制。
             </p>
             <ul>
-              <li>Introduced clustered representative images and Gaussian-blurred targets at high-noise timesteps.</li>
-              <li>Evaluated convergence and generation quality on CelebA and ImageNet-256 using FID, sFID, IS, and diversity metrics.</li>
+              <li data-i18n="diffusionProjectPointOne">在高噪时间步引入聚类代表图与高斯模糊目标，并结合 logit-normal 时间步采样。</li>
+              <li data-i18n="diffusionProjectPointTwo">在 CelebA 与 ImageNet-256 上使用 FID、sFID、IS 和多样性指标评估生成质量与收敛速度。</li>
             </ul>
           </article>
         </div>
@@ -183,64 +196,64 @@
       <section class="section split" id="education" aria-labelledby="education-title">
         <div>
           <div class="section-heading compact">
-            <p class="eyebrow">Education</p>
-            <h2 id="education-title">Academic Background</h2>
+            <p class="eyebrow" data-i18n="educationEyebrow">教育</p>
+            <h2 id="education-title" data-i18n="educationTitle">教育背景</h2>
           </div>
           <div class="timeline">
             <article>
-              <time>2024.09 - Present</time>
-              <h3>Institute of Computing Technology, Chinese Academy of Sciences</h3>
-              <p>Ph.D. in Computer Science and Technology, VIPL Lab. GPA: 3.87 / 4.00.</p>
+              <time data-i18n="phdTime">2024.09 - 至今</time>
+              <h3 data-i18n="phdSchool">中国科学院计算技术研究所</h3>
+              <p data-i18n="phdText">计算机科学与技术博士在读，VIPL 实验室。GPA: 3.87 / 4.00。</p>
             </article>
             <article>
               <time>2020.09 - 2024.07</time>
-              <h3>Southeast University</h3>
-              <p>B.Eng. in Computer Science and Technology. GPA: 3.76 / 4.00, ranked 6 / 113.</p>
+              <h3 data-i18n="undergradSchool">东南大学</h3>
+              <p data-i18n="undergradText">计算机科学与技术学士。GPA: 3.76 / 4.00，综合排名 6 / 113。</p>
             </article>
           </div>
         </div>
 
-        <aside class="contact-panel" aria-label="Contact">
-          <p class="eyebrow">Contact</p>
-          <h2>Let’s Connect</h2>
-          <p>I am based in Beijing and can be reached by email for research discussions and collaboration.</p>
+        <aside class="contact-panel" data-i18n-aria-label="contactAria" aria-label="联系方式">
+          <p class="eyebrow" data-i18n="contactEyebrow">联系</p>
+          <h2 data-i18n="contactTitle">欢迎交流</h2>
+          <p data-i18n="contactText">我目前在北京，欢迎通过邮件联系，讨论研究问题与合作机会。</p>
           <a href="mailto:zhaozuyan24s@ict.ac.cn">zhaozuyan24s@ict.ac.cn</a>
         </aside>
       </section>
 
       <section class="section" id="awards" aria-labelledby="awards-title">
         <div class="section-heading compact">
-          <p class="eyebrow">Honors</p>
-          <h2 id="awards-title">Awards</h2>
+          <p class="eyebrow" data-i18n="awardsEyebrow">荣誉</p>
+          <h2 id="awards-title" data-i18n="awardsTitle">获奖经历</h2>
         </div>
         <div class="award-list">
           <article>
             <time>2025</time>
-            <p>UCAS Merit Student; First-class Academic Scholarship.</p>
+            <p data-i18n="awardScholarship">中国科学院大学三好学生；一等学业奖学金。</p>
           </article>
           <article>
             <time>2023</time>
-            <p>ICPC China Collegiate Programming Contest Women’s Contest, Gold Medal.</p>
+            <p data-i18n="awardIcpc">中国大学生程序设计竞赛女生赛，金奖。</p>
           </article>
           <article>
             <time>2023</time>
-            <p>Challenge Cup “Jiebang Guashuai”, Bronze Award.</p>
+            <p data-i18n="awardChallenge">挑战杯揭榜挂帅，铜奖。</p>
           </article>
           <article>
             <time>2023</time>
-            <p>Jiangsu Collegiate Programming Contest, Silver Medal.</p>
+            <p data-i18n="awardJiangsu">江苏省程序设计竞赛，银奖。</p>
           </article>
           <article>
             <time>2021</time>
-            <p>National College Student Mathematics Competition, Second Prize; Jiangsu Advanced Mathematics Competition, Second Prize.</p>
+            <p data-i18n="awardMath">全国大学生数学竞赛二等奖；江苏省高等数学竞赛二等奖。</p>
           </article>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>© 2026 Zuyan Zhao. Built for GitHub Pages.</p>
-      <a href="#top">Back to top</a>
+      <p data-i18n="footerText">© 2026 赵祖妍。基于 GitHub Pages 构建。</p>
+      <a href="#top" data-i18n="backToTop">回到顶部</a>
     </footer>
   </body>
 </html>
